@@ -3,7 +3,6 @@ class Ecsrun < Formula
   desc "Easily run one-off tasks against an ECS Task Definition."
   homepage "https://github.com/masterpointio/ecsrun"
   version "0.1.2"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/masterpointio/ecsrun/releases/download/v0.1.2/ecsrun_Darwin_x86_64.tar.gz"
