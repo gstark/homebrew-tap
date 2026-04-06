@@ -5,20 +5,20 @@
 class AgentManager < Formula
   desc "Manage AI agent configurations across Claude Code and Codex"
   homepage "https://github.com/gstark/agent-manager"
-  version "0.1.11"
+  version "0.1.12"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gstark/agent-manager/releases/download/v0.1.11/agent-manager_0.1.11_darwin_amd64.tar.gz"
-      sha256 "121455867c05f750159bbe548d7e85cc728cdd5cc82269ab346855d8836829be"
+      url "https://github.com/gstark/agent-manager/releases/download/v0.1.12/agent-manager_0.1.12_darwin_amd64.tar.gz"
+      sha256 "1e0f5c826315164b9594be3233010c13740f468cac5bb6f80f0be55c8a08dff9"
 
       define_method(:install) do
         bin.install "agm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gstark/agent-manager/releases/download/v0.1.11/agent-manager_0.1.11_darwin_arm64.tar.gz"
-      sha256 "8e1e81b99f99bfc3c7dcb77530ab5e546d2665d9d323c45b70ffef7dbb8bf548"
+      url "https://github.com/gstark/agent-manager/releases/download/v0.1.12/agent-manager_0.1.12_darwin_arm64.tar.gz"
+      sha256 "d2f551a00c65cad44150f6d1942bd234ca92f327f46e73e88aa121ed75cfb1d9"
 
       define_method(:install) do
         bin.install "agm"
@@ -28,15 +28,15 @@ class AgentManager < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gstark/agent-manager/releases/download/v0.1.11/agent-manager_0.1.11_linux_amd64.tar.gz"
-      sha256 "1ff8c399852d6bc6af791a55b72d4df4bb1cbe10cb80396a4163e3e705e46b5d"
+      url "https://github.com/gstark/agent-manager/releases/download/v0.1.12/agent-manager_0.1.12_linux_amd64.tar.gz"
+      sha256 "c45d238cd94b525d660227985f78cac854497c292e8d978b38b9df59d6a12df1"
       define_method(:install) do
         bin.install "agm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gstark/agent-manager/releases/download/v0.1.11/agent-manager_0.1.11_linux_arm64.tar.gz"
-      sha256 "3b45725698c46503a7701aa37e5c009323cd8407ab34e2d5bffa0fd26b3b59e4"
+      url "https://github.com/gstark/agent-manager/releases/download/v0.1.12/agent-manager_0.1.12_linux_arm64.tar.gz"
+      sha256 "5aadddbd7d15ac39f27d3dcea8bf12c0b3105d2dd996c0dc7a986cd16186ce5e"
       define_method(:install) do
         bin.install "agm"
       end
