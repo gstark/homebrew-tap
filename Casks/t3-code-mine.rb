@@ -1,8 +1,8 @@
 cask "t3-code-mine" do
-  version "0.0.44-mine.202610071014"
-  sha256 "886a9b16cd51e6d4f5443f40bf8012ddbf4bd27d4432ccbbeb24c15787dc44c1"
+  version "0.0.44-mine.202610071022"
+  sha256 "2ee8c9c10d386be704de15601d2d6b37bb22f780aae9995079ebd21073599388"
 
-  url "https://github.com/gstark/t3code/releases/download/mine-v#{version}/T3-Code-#{version}-arm64.dmg"
+  url "https://github.com/gstark/t3code/releases/download/v#{version}/T3-Code-#{version}-arm64.dmg"
   name "T3 Code (mine)"
   desc "Personal fork build of T3 Code"
   homepage "https://github.com/gstark/t3code/tree/mine"
