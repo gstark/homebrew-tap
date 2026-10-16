@@ -1,6 +1,6 @@
 cask "t3-code-mine" do
-  version "0.0.45-mine.202610161610"
-  sha256 "b149f6979b5b33f36f27169715c4f9272e16e18f895c2de1916635416d3beb07"
+  version "0.0.45-mine.202610161654"
+  sha256 "3e2a7725b81f42ff142e46a38d19634de621fa4fc5775e2d7892371f16f08eb9"
 
   url "https://github.com/gstark/t3code/releases/download/v#{version}/T3-Code-#{version}-arm64.dmg"
   name "G$ Code (mine)"
