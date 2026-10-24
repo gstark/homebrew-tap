@@ -1,6 +1,6 @@
 cask "riffle" do
-  version "1.0-202610232303"
-  sha256 "1d63e6852f6742f31d96f6dc96208c9c70f99d0e1535c8985566fa560690ff3c"
+  version "1.0-202610232312"
+  sha256 "6e0d367eab9a3401ece31028d48b39a4be5af5287be605df9d2aab8b0998b9f3"
 
   url "https://github.com/gstark/riffle/releases/download/v#{version}/Riffle-#{version}.zip"
   name "Riffle"
