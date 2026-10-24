@@ -1,6 +1,6 @@
 cask "shoebox" do
-  version "0.1-202610232220"
-  sha256 "c974bbb84e548bc8f5cb29534d2eafc992b7fbba19c2d9e991e8323c2457ee90"
+  version "0.1-202610232237"
+  sha256 "86863fe94583925073c84e3c46928a397e7239e5649cbb067b629bd50a8e99c9"
 
   url "https://github.com/gstark/shoebox/releases/download/v#{version}/Shoebox-#{version}.zip"
   name "Shoebox"
