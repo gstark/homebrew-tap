@@ -1,6 +1,6 @@
 cask "helium-dev" do
-  version "0.1-202610292223"
-  sha256 "1d5313daa6c36992ddb36faae913a2f9e7589af6365829c86d355bbd6681d844"
+  version "0.1-202610292227"
+  sha256 "0ef65c410951c6e4927b4f3cc5494229a623f207b455b6e06c9ecc7a2b558b9d"
 
   url "https://github.com/gstark/chrome-devtools-network-status-filters/releases/download/v#{version}/Helium-Dev-#{version}.zip"
   name "Helium Dev"
@@ -12,10 +12,14 @@ cask "helium-dev" do
 
   app "Helium Dev.app"
 
+  # The build is signed but not notarized, so remove the quarantine flag to let it open.
   postflight_steps do
-    # The build is signed but not notarized, so remove the quarantine flag to let it open.
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Helium Dev.app"]
-    # Make Helium Dev the default browser. macOS asks for confirmation.
-    run "/usr/bin/open", args: ["-a", "{{appdir}}/Helium Dev.app", "--args", "--make-default"]
   end
+
+  caveats <<~CAVEATS
+    Open Helium Dev once to make it the default browser. macOS asks you to confirm.
+    To ask again later, run:
+      open -a "Helium Dev" --args --make-default
+  CAVEATS
 end
