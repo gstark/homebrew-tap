@@ -1,7 +1,6 @@
 class Whichdns < Formula
   desc "Benchmark DNS resolvers and rank them by reliability, then latency"
   homepage "https://github.com/gstark/whichdns"
-  version "0.4.0"
   license "MIT"
 
   on_macos do
