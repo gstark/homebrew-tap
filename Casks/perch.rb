@@ -1,6 +1,6 @@
 cask "perch" do
-  version "0.1.0-202611090643"
-  sha256 "3edacaac2f2899754918e457e7b83fd6fb927cc769725087756836a38c63d380"
+  version "0.1.0-202611092126"
+  sha256 "92d340af03d3f223d90e680023f63159ee75fdf3e5c3a9a35f5db88a088bb9a2"
 
   url "https://github.com/gstark/perch/releases/download/v#{version}/Perch-#{version}.zip"
   name "Perch"
