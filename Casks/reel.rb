@@ -1,6 +1,6 @@
 cask "reel" do
-  version "0.1.0-202611012211"
-  sha256 "649842850b2e45956b4be658e52a5949bc26c436f6d551bff1f90e54fef04d31"
+  version "0.1.0-202611101701"
+  sha256 "21dc9cf019d9b37b23c12dec27f58774f42dba97ee764b8e95676e0e73f786a2"
 
   url "https://github.com/gstark/reel/releases/download/v#{version}/Reel-#{version}.zip"
   name "Reel"
